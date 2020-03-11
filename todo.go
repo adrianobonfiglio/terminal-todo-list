@@ -77,6 +77,8 @@ func main() {
 		writeJson(tds)
 	case LIST_ARG:
 		readTodos(&tds)
+	default:
+		fmt.Println("no command found")
 	}
 	
 	for i := 0; i < len(tds); i++ {
